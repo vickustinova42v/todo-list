@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import AddForm from '../add-form';
 import TodoItem from '../todo-item';
+import './app.css';
 
 const App = () => {
   const[todo, setTodo] = useState([]);
@@ -40,12 +41,12 @@ const App = () => {
   }
 
   return (
-    <div>
-      <h1>
+    <div className="todo">
+      <h1 className="title">
         Список задач {todo.length}
       </h1>
       <AddForm addItem={addItem} onChangeInputValue={onChangeInputValue} currentValue={currentValue}/>
-      <ul>
+      <ul className="todo__list">
         {
           todo.map(
             (item) => { 

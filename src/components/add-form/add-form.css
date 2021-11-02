@@ -1,0 +1,22 @@
+.todo__form {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.todo__input {
+  width: calc(100% - 40px);
+  height: 100%;
+  padding: 10px;
+  border: 2px solid greenyellow;
+}
+
+.todo__button--submit {
+  width: 40px;
+  font-size: 1.5em;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: greenyellow;
+}

@@ -1,0 +1,36 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html,
+button,
+input {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+.todo {
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.todo__list {
+  width: 100%;
+}
+
+.todo__button {
+  height: 100%;
+  cursor: pointer;
+  border: none;
+}
+
+.title {
+  text-align: center;
+  font-size: 2em;
+}
