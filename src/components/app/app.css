@@ -25,7 +25,6 @@ input {
 }
 
 .todo__button {
-  height: 100%;
   cursor: pointer;
   border: none;
 }

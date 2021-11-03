@@ -4,7 +4,11 @@ const TodoItem = ({deleteItem, item, toggleItem}) => {
     return(
         <li className="todo__item">
             <button data-id={item.id} type="button" onClick={toggleItem} className={item.done === true ? "todo__item--done todo__button todo__button--task" : "todo__button todo__button--task"}>
-                <span className="todo__date">{item.date.toLocaleDateString()} - {item.date.toLocaleTimeString()}</span>
+                <span className="todo__date">
+                    {item.date.toLocaleDateString()}
+                    <br />
+                    {item.date.toLocaleTimeString()}
+                </span>
                 <span className="todo__task">{item.title}</span>
             </button>
             <button data-id={item.id} type="button" className="todo__button todo__button--delete" onClick={deleteItem}>
