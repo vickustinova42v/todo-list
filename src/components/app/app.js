@@ -24,9 +24,10 @@ const App = () => {
   }
 
   const deleteItem = (e) => {
+    const id = Number(e.currentTarget.dataset.id);
     setTodo((todoPrev) => 
       todoPrev.filter((item) => 
-        item.id !== Number(e.target.dataset.id)
+        item.id !== id
       )
     );
   }
